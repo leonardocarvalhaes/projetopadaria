@@ -2,7 +2,7 @@
 	<div class="container">
 		
 		<div class="navbar-header">
-			<a class="navbar-brand" href="#">Padaria Pão de Trigo</a>
+			<a class="navbar-brand" href="{{ asset('') }}">Padaria Pão de Trigo</a>
 		</div>
 		
 		<div id="navbar" class="collapse navbar-collapse">
@@ -14,7 +14,7 @@
 					<a href="#about" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Receitas <span class="caret"></span></a>
 
 					<ul class="dropdown-menu" role="menu">
-						<li><a href="#">Listar receitas</a></li>
+						<li><a href="{{ asset('/receitas') }}">Listar receitas</a></li>
 						<li><a href="#">Listar ingredientes</a></li>
 					</ul>
 				</li>
