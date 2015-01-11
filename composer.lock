@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cce6015a015d1aaf6f2cae97680d79b9",
+    "hash": "11f6ac739a68e8484f3a0dccac4d1341",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -515,16 +515,16 @@
         },
         {
             "name": "patchwork/utf8",
-            "version": "v1.1.26",
+            "version": "v1.1.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tchwork/utf8.git",
-                "reference": "6b8e46603b49ee87ad6bceb314da94cc04ffcdce"
+                "reference": "f26cc98847add84cb27c5d77e2e0dff715944ac6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tchwork/utf8/zipball/6b8e46603b49ee87ad6bceb314da94cc04ffcdce",
-                "reference": "6b8e46603b49ee87ad6bceb314da94cc04ffcdce",
+                "url": "https://api.github.com/repos/tchwork/utf8/zipball/f26cc98847add84cb27c5d77e2e0dff715944ac6",
+                "reference": "f26cc98847add84cb27c5d77e2e0dff715944ac6",
                 "shasum": ""
             },
             "require": {
@@ -537,11 +537,6 @@
                 "ext-mbstring": "Use Mbstring for best performance"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.1-dev"
-                }
-            },
             "autoload": {
                 "psr-0": {
                     "Patchwork": "class/",
@@ -567,7 +562,7 @@
                 "utf-8",
                 "utf8"
             ],
-            "time": "2014-11-08 10:13:25"
+            "time": "2015-01-11 12:41:11"
         },
         {
             "name": "phpseclib/phpseclib",
@@ -1640,21 +1635,12 @@
             "time": "2015-01-03 15:23:51"
         }
     ],
-    "packages-dev": [
-
-    ],
-    "aliases": [
-
-    ],
+    "packages-dev": [],
+    "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": [],
     "prefer-stable": false,
-    "platform": [
-
-    ],
-    "platform-dev": [
-
-    ]
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
 }

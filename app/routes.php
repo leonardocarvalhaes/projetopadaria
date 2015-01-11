@@ -18,9 +18,5 @@ Route::get('/', function()
 	return View::make('padaria.index')->with('titulo', $titulo);
 });
 
-Route::get('receitas', function()
-{
-	$titulo = 'Receitas';
+Route::controller('receitas', 'ReceitaController');
 
-	return View::make('padaria.receitas.listar_receitas')->with('titulo', $titulo);
-});

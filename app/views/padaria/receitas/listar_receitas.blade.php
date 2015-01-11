@@ -13,6 +13,16 @@
 		<h1>Receitas</h1>
 	</div>
 
+	<div class="row-fluid">
+		
+		<div class="opcoes_superiores col-md-12">
+			
+			<a class="btn btn-success pull-right" href="{{ asset('receitas/nova') }}">Nova receita</a>
+
+		</div>
+
+	</div>
+
 	<table id="example" class="table_datatable display" cellspacing="0" width="100%">
 		<thead>
 			<tr>
