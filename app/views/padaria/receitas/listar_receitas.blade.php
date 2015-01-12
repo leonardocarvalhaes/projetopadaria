@@ -26,35 +26,31 @@
 	<table id="example" class="table_datatable display" cellspacing="0" width="100%">
 		<thead>
 			<tr>
-				<th>Name</th>
-				<th>Position</th>
-				<th>Office</th>
-				<th>Age</th>
-				<th>Start date</th>
-				<th>Salary</th>
+				<th>ID</th>
+				<th>Nome</th>
+				<th>Modo de Preparo</th>
+				<th>Ingredientes</th>
 			</tr>
 		</thead>
 
 		<tfoot>
 			<tr>
-				<th>Name</th>
-				<th>Position</th>
-				<th>Office</th>
-				<th>Age</th>
-				<th>Start date</th>
-				<th>Salary</th>
+				<th>ID</th>
+				<th>Nome</th>
+				<th>Modo de Preparo</th>
+				<th>Ingredientes</th>
 			</tr>
 		</tfoot>
 
 		<tbody>
-			<tr>
-				<td>Tiger Nixon</td>
-				<td>System Architect</td>
-				<td>Edinburgh</td>
-				<td>61</td>
-				<td>2011/04/25</td>
-				<td>$320,800</td>
-			</tr>
+			@foreach($receitas as $receita)
+				<tr>
+					<td>{{ $receita->id }}</td>
+					<td>{{ $receita->nome }}</td>
+					<td>{{ $receita->modoDePreparo }}</td>
+					<td>{{ str_limit($receita->mostrarIngredientes(), 100) }}</td>
+				</tr>
+			@endforeach
 		</tbody>
 	</table>
 @stop

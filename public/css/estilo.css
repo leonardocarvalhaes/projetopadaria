@@ -5,3 +5,10 @@
 .row{
 	margin-bottom: 20px;
 }
+
+label.error {
+    display:block;
+    width:100%;
+    color:red;
+    font-size: 12px;
+}

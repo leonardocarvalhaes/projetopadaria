@@ -1,13 +1,17 @@
 <nav class="navbar navbar-default navbar-fixed-top">
+
 	<div class="container">
 		
 		<div class="navbar-header">
+
 			<a class="navbar-brand" href="{{ asset('') }}">Padaria Pão de Trigo</a>
+
 		</div>
 		
 		<div id="navbar" class="collapse navbar-collapse">
 			
 			<ul class="nav navbar-nav">
+
 				<li class="active"><a href="#">Página inicial</a></li>
 				
 				<li class="dropdown">
@@ -23,6 +27,7 @@
 				<li><a href="#contact">Vendas</a></li>
 				<li><a href="#contact">Produtos</a></li>
 				<li><a href="#contact">Estoque</a></li>
+				
 			</ul>
 
 			<ul class="nav navbar-nav pull-right">

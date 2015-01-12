@@ -38,6 +38,7 @@
 	{{ HTML::script('js/jquery/jquery-1.11.2.js') }}
 	{{ HTML::script('js/bootstrap3.3.1/bootstrap.min.js') }}
 	{{ HTML::script('js/jquery.dataTables.min.js') }}
+	{{ HTML::script('js/jquery.validate/dist/jquery.validate.min.js') }}
 	{{ HTML::script('js/logica_interface.js') }}
 
 @show
