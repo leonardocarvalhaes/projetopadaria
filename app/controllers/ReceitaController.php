@@ -17,6 +17,18 @@ class ReceitaController extends BaseController {
 
 		$ingredientes = Ingrediente::all();
 
+		if($ingredientes->isEmpty()) {
+
+			$titulo = 'Erro';
+			$mensagem = 'Não há ingredientes cadastrados. É necessário haver ao menos um ingrediente cadastrado para adicionar receitas.';
+			$urlDestino = asset('receitas');
+
+			return View::make('padaria.erro')->with('mensagem', $mensagem)
+																->with('urlDestino', $urlDestino)
+																->with('titulo', $titulo);
+
+		}
+
 		$ingredientesArray = array();
 
 		foreach($ingredientes as $ingrediente) {
@@ -32,6 +44,20 @@ class ReceitaController extends BaseController {
 	}
 
 	public function postNova() {
+
+		$messages = array(
+			'unique' => '<label for=":attribute" class="error">Dado do campo :attribute já está em uso.</label>'
+		);
+
+		$regras = array(
+			'nome' => 'unique:receitas,nome'
+		);
+
+		$validator = Validator::make(Input::all(), $regras, $messages);
+		if ($validator->fails())
+		{
+			return Redirect::back()->withErrors($validator)->withInput();
+		}
 
 		$titulo = 'Receitas';
 

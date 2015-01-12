@@ -20,6 +20,7 @@
 			<div class="col-md-6">
 
 				<p>{{ Form::text('nome', Input::old('nome'), array('class'=>'form-control', 'Placeholder'=>'*Nome')) }}</p>
+				{{ $errors->first('nome') }}
 
 				<p>{{ Form::textarea('modo_preparo', Input::old('modo_preparo'), array('class'=>'form-control', 'Placeholder'=>'Modo de preparo')) }}</p>
 
